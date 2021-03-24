@@ -5,20 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script>
+
+              jQuery(function(){
+                  $(function () {
+                      $(window).scroll(function () {
+                          if ($(this).scrollTop() > 200 ) {
+                              $('#scrollUp').css('right','10px');
+                          } else {
+                              $('#scrollUp').removeAttr( 'style' );
+                          }
+
+                      });
+                  });
+              });
+  </script>
   <title>Aurélien Anglas CV</title>
 </head>
 <body>
 <header>
   <h1>AURELIEN ANGLAS </h1>
-  <h1>DEVELOPPEUR WEB JUNIOR</h1>
+  <h1></h1>
 </header>
-<a id="haut"></a>
+
 <nav>
   <a href="#profil">PROFIL</a>
   <a href="#parcours">PARCOURS PRO</a>
   <a href="#competences">COMPETENCES</a>
   <a href="#portfolio">PORTFOLIO</a>
   <a href="#loisirs">LOISIRS</a>
+  <a href="#contact">CONTACT</a>
 </nav>
   <section id="profil">
 
@@ -86,7 +103,6 @@
     <br>
     <br>
   </section>
-  <a  class=haut href="#haut"> <img src=img/up.svg alt="" ></a>
 
   <section id="competences">
 
@@ -122,6 +138,12 @@
 <section id="portfolio">
   <article class="">
     <h2>PORTFOLIO</h2>
+  <div>
+  <a  class=affichepersonnel href="img/anglas-aurelien-affiche-perso.pdf" target="_blank"> <img  src=img/anglas-aurelien-affiche-perso.jpg alt=""></a>
+ <a href="https://devageval.euro-info.fr/" target="_blank"><img src=img/ageval.jpg alt=""></a>
+  <a  class=affichepersonnel href="img/aurelien-anglas-affiche-ageval.pdf" target="_blank"> <img  src=img/anglas-aurelien-affiche-ageval.jpg alt=""></a>
+<a  class=affichepersonnel href="img/depliant atelier numerique.pdf" target="_blank"> <img  src=img/Depliant-atelier-numerique.jpg alt=""></a>
+</div>
   </article>
 
 </section>
@@ -132,12 +154,12 @@
     </article>
 
     <article class="loisirs">
-      <img src="img/game-controller.svg" alt="">
-      <img src="img/headphones.svg" alt="">
-      <img src="img/film.svg" alt="">
+      <img src="img/game-controller.jpg" alt="">
+      <img src="img/headphone.jpg" alt="">
+      <img src="img/cinema.jpg" alt="">
     </article>
     </section>
-    <a  class=haut href="#haut"> <img  src=img/up.svg alt=""></a>
+
 
 <footer>
   <section id="contact">
@@ -196,6 +218,7 @@
   </div>
 </div>
 </section>
+<p>&copy; 2021 Aurelien ANGLAS</p>
 </footer>
 </body>
 </html>

@@ -228,6 +228,7 @@ article{
     padding:15px;
     left:25%
   }
+
   .slideshow{
     position: relative;
     width: 100px;
@@ -289,15 +290,21 @@ article{
     padding-right:30px;
     color:white;
   }
+  #portfolio img{
+    height: 100px;
+    position: relative;
+    justify-content:space-around;
+    padding-right:30px;
+    color:white;
+  }
   .loisirs {background-color: #259;}
  .haut{
 
    justify-content: flex-end;
  }
  .haut img{
-   float: right;
-   display: flex;
-   height:40px;
+   position:relative;
+   height:25px;
  }
 
   footer{
