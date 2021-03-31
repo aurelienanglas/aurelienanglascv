@@ -13,15 +13,17 @@
   box-sizing:border-box;
   font-family: "glacial indifference";
 }
-header{   background-color: #259;
+header{   background-color: #fff;
 }
 header h1{
   font-family: "Gi Bolder";
-  font-size: 30.5px;
-  color: white;
+  font-size: 60px;
+  text-align: center;
+  color: #259;
   padding: 15px 15PX;
 }
-
+header img{
+height: 150px;}
 section{
   padding: 25px 20PX;
 }
@@ -31,15 +33,15 @@ width: 100%;
 position:relative;
 top:0px;
 text-align:center;
-z-index: 11;
-background-color: #259;
+z-index: auto;
+background-color: #fff;
 }
 nav a{
 font-family: "GI Bolder";
 font-weight:500;
 text-transform:uppercase;
 text-decoration:none;
-color:white;
+color:#ddab54;
 margin:0px 15px;
 font-size:1.5em;
 letter-spacing:2px;
@@ -140,7 +142,7 @@ article{
     border-radius: 50%;
     border: 4px solid #ddab54;
     background: #fff;
-    z-index: 1;
+    z-index: auto;
   }
   .left{
     left:0;
@@ -186,7 +188,7 @@ article{
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
+    z-index: auto;
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
@@ -200,7 +202,7 @@ article{
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
+    z-index: auto;
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
@@ -212,14 +214,16 @@ article{
   }
   h2{color:#ddab54;}
   #profil{
-    z-index: 12;
+    z-index: auto;
     background:#fff;
   }
   #parcours{
     background:#fff;
-    z-index: 12;
+    z-index: auto;
   }
-  #parcours h2{
+   h2{
+     font-family: "GI bolder";
+     font-size: 40px;
     color:#ddab54;
   }
   #parcours p{
