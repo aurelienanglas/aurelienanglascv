@@ -31,18 +31,24 @@ section{
 input{
   display: none;
 }
-
+body{
+  background: #259;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.menuArea{background: white;}
 ul {
+  background-color: white;
 display: flex;
 justify-content: space-between;
-color: #259;
+color: #ddab54;
 padding-left: 30px;
 padding-right: 30px;
 }
-a{
-  color:#ddab54;
+ul a{background: white;
+  color:#259;
+  font-size: 35px;
 }
-
 article{
   font-size: 20px;
   font-family: "Glacial indifference";
@@ -177,7 +183,7 @@ article{
   .cv img{
     height: 160px;
     padding:15px;
-    left:25%
+    right: -15%;
   }
 
   .slideshow{
@@ -395,11 +401,11 @@ article{
   }
 };
 
-@media screen and (max-width:1090px)and (min-width:360px){
+@media screen and (max-width:768px){
   body{
-    background: #259;
-    padding-left: 50px;
-    padding-right: 50px;
+    background: white;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media screen and (max-width:720px) {
