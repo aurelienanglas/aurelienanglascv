@@ -51,7 +51,7 @@ ul a{background: white;
 }
 article{
   font-size: 20px;
-  font-family: "Glacial indifference";
+  font-family: "glacial indifference";
   color: black;
   padding-left: 1.5EM;
   padding-right: 1.5em;
@@ -104,7 +104,7 @@ article{
   }
 
 
-  a{font-family: "GI BOLDER";
+  a{font-family: "GI Bolder";
     text-decoration: none;
     font-size: 40px;
   }
@@ -185,41 +185,48 @@ article{
     padding:15px;
     right: -15%;
   }
-  button {
-        display: inline-block;
+  #boutoncv {
+    background-color: white;
+    text-align: center;
+  }
+#boutoncv a {
+        display:inline-block;
+
+        font-family: GI Bolder;
+        font-size: 20px;
+        color:white;
         background-color: #259;
         border-radius: 10px;
-        border: 4px double #cccccc;
-        color: #eeeeee;
-        text-align: center;
-        font-size: 28px;
-        padding: 10px;
-        width: 150px;
+        border: 4px double #916b29;
+        padding: 20px;
+        width: 250px;
         transition: all 0.5s;
         cursor: pointer;
         margin: 5px;
         }
-        button span {
+        #boutoncv a span {
         cursor: pointer;
         display: inline-block;
+        text-align: center;
         position: relative;
         transition: 0.5s;
         }
-        button span:after {
-        content: '\00bb';
+        #boutoncv a span:after {
+
         position: absolute;
+        text-align: center;
         opacity: 0;
         top: 0;
         right: -20px;
         transition: 0.5s;
         }
-        button:hover {
+        #boutoncv a:hover {
         background-color: #ddab54;
         }
-        button:hover span {
+        #boutoncv a:hover span {
         padding-right: 25px;
         }
-        button:hover span:after {
+      #boutoncv a:hover span:after {
         opacity: 1;
         right: 0;
         }
@@ -227,7 +234,7 @@ article{
     position: relative;
     width: 100px;
     height: 100px;
-    transform-style: preserve-3d;
+    transform-style:flat;
     perspective: 500px
   }
   .slideshow .slide{
@@ -236,23 +243,27 @@ article{
     left:0;
     right: 0;
     bottom:0;
-    animation: animate 12s linear infinite;
+    animation: animate 13.5s linear infinite;
     transform: rotateY(90deg);
   }
-  .slideshow .slide:nth-child(1){
-    animation-delay: 0s;}
   .slideshow .slide:nth-child(2){
-    animation-delay: 1.5s;}
+    animation-delay: 0s;}
   .slideshow .slide:nth-child(3){
+    animation-delay: 01.5s;}
+  .slideshow .slide:nth-child(8){
     animation-delay: 3s;}
-  .slideshow .slide:nth-child(4){
+  .slideshow .slide:nth-child(1){
     animation-delay: 4.5s;}
-  .slideshow .slide:nth-child(5){
+  .slideshow .slide:nth-child(4){
     animation-delay: 6s;}
-  .slideshow .slide:nth-child(6){
+  .slideshow .slide:nth-child(5){
     animation-delay: 7.5s;}
-  .slideshow .slide:nth-child(7){
+  .slideshow .slide:nth-child(6){
     animation-delay: 9s;}
+  .slideshow .slide:nth-child(9){
+    animation-delay: 10.5s;}
+  .slideshow .slide:nth-child(7){
+    animation-delay: 12s;}
 
   .slideshow .slide img{
     position: absolute;
@@ -430,11 +441,7 @@ article{
  .right {
    left: 0px;}
  }
-.cv a {
-  width: 100%;
-  padding-left: 25px;
-  padding-right: 25px;}
-}
+
 
 @media screen and (max-width:320px){
   nav{position: relative;
@@ -452,163 +459,143 @@ article{
   }
 }
 @media screen and (max-width:720px) {
-  input {
-  display: none;
-}
+  a {
+    text-decoration: none;
+    color: #1E1E23;
+    opacity:1;
+    font-family: 'work sans', sans serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: 200ms;
+  }
+  a:hover {
+    opacity:0.5;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
 
-.open {
-  background-color: #3c3c3c;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  cursor: pointer;
-  position: relative;
-  top: 8px;
-}
 
-.open:before {
-  content: "";
-  background-color: #3c3c3c;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  position: relative;
-  top: -8px;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
-}
 
-.open:after {
-  content: "";
-  background-color: #3c3c3c;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  position: relative;
-  top: 4px;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
-}
+  .container {
+    margin-top: 50px;
+    Display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .phone {
+    background-color: #36383F;
+    border-radius: 40px;
+    width: 300px;
+    height: 600px;
+    Display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 30px 50px 100px #85888C;
+  }
+  .content {
+    border: 1px solid #36383F;
+    border-radius: 20px;
+    width: 94%;
+    height: 91%;
+    background-color: #F5F6FA;
+    overflow: hidden;
+  }
+  nav {
+    background-color: #1E1E23;
+    height: 65px;
+  }
 
-.menuOpen {
-  width: 24px;
-  height: 20px;
-  display: block;
-  padding: 15px;
-  cursor: pointer;
-  float: right;
-}
 
-.menuOpen:hover .open:before {
-  top: -9px;
-}
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
 
-.menuOpen:hover .open:after {
-  top: 5px;
-}
+  #menuToggle input
+  {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
 
-.menu {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: white;
-}
+  #menuToggle span
+  {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+                opacity 0.55s ease;
+  }
 
-.menu label {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  background-size: 100%;
-  cursor: pointer;
-}
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
 
-.menu .menuContent {
-  position: relative;
-  top: 50%;
-  font-size: 54px;
-  text-align: center;
-  padding-bottom: 20px;
-  margin-top: -170px;
-}
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
 
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-}
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
 
-.menu ul li a {
-  display: block;
-  color: #ddab54;
-  text-decoration: none;
-  transition: color 0.1s;
-  font-family: GI bolder;
-  text-transform: uppercase;
-  padding: 10px 0;
-}
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
 
-.menu ul li a:hover {
-  color: #259;
-}
+  #menu
+  {
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    box-shadow: 0 0 10px #85888C;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #F5F6FA;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
 
-.menu ul li:hover {
-  background: white;
-}
+  #menu li
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
 
-.menuEffects {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
-}
-
-.menuEffects ul {
-  transform: translateY(0%);
-  transition: all 0.5s;
-}
-
-#menuToggle:checked ~ .menuEffects {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s;
-}
-
-#menuToggle:checked ~ .menuEffects ul {
-  opacity: 1;
-}
-
-#menuToggle:checked ~ .menuOpen .open {
-  background-color: transparent;
-}
-
-#menuToggle:checked ~ .menuOpen .open:before {
-  content: "";
-  background-color: white;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-#menuToggle:checked ~ .menuOpen .open:after {
-  content: "";
-  background-color: #ddab54;
-  transform: rotate(-45deg);
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: auto;
-}
-
-#menuToggle:not(:checked) ~ .menuEffects ul {
-  transform: translateY(-30%);
-}
-
-}
-@media screen (max-width:721px){
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
