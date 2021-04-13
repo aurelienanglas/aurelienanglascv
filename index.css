@@ -20,8 +20,9 @@ header h1{
   font-family: "Gi Bolder";
   font-size: 60px;
   text-align: center;
+  background-color: white;
   color: #259;
-  padding: 15px 30PX;
+margin-bottom: 25px;
 }
 header img{
 height: 150px;
@@ -40,6 +41,7 @@ body{
 nav{
   width: 100%;
   background-color: #white;
+  margin-top: : 30px;
 }
 nav> ul{
   margin: 0px;
@@ -187,6 +189,7 @@ nav input[type=checkbox]:checked ~ ul{
   article.profil{
     font-size: 24px;
   }
+  .profil{background-color: #fff}
   #profil{
     z-index: auto;
     background:#fff;
@@ -264,7 +267,7 @@ nav input[type=checkbox]:checked ~ ul{
     perspective: 500px
   }
   .slideshow .slide{
-    position: absolute;
+    position: relative;
     top:0;
     left:0;
     right: 0;
@@ -295,8 +298,9 @@ nav input[type=checkbox]:checked ~ ul{
     position: absolute;
     top: 0;
     left:0;
-    object-fit: cover;
+    object-fit:fill;
     transform: rotateY(180deg);
+    animation-duration: infinite;
   }
   @keyframes animate {
   0%{
