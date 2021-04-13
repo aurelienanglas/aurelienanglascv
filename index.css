@@ -21,10 +21,11 @@ header h1{
   font-size: 60px;
   text-align: center;
   color: #259;
-  padding: 15px 15PX;
+  padding: 15px 30PX;
 }
 header img{
-height: 150px;}
+height: 150px;
+}
 section{
   padding: 25px 20PX;
 }
@@ -42,10 +43,14 @@ nav{
 }
 nav> ul{
   margin: 0px;
-  padding:0px;
+  padding:20px 10px 20px 10px;
 }
 nav li{
   list-style-type: none;
+}
+li::before {
+  content: "•";
+color:#ddab54
 }
 nav>ul>li{
   float: left;
@@ -179,6 +184,9 @@ nav input[type=checkbox]:checked ~ ul{
     left: -16px;
   }
   h2{color:#ddab54;}
+  article.profil{
+    font-size: 24px;
+  }
   #profil{
     z-index: auto;
     background:#fff;
@@ -333,7 +341,7 @@ nav input[type=checkbox]:checked ~ ul{
  #scrollUp
  {
  position: fixed;
- bottom : 10px;
+ bottom : 20px;
  right: -100px;
  z-index: 9999;
  }
@@ -461,7 +469,13 @@ nav input[type=checkbox]:checked ~ ul{
  }
 
 
-
+@media screen and (max-width:320px){
+  nav{position: relative;
+  }
+  nav a{font-family: "GI Bolder";
+  font-size: 1.5em;
+  }
+};
 
 @media screen and (max-width:768px){
   body{
@@ -473,10 +487,10 @@ nav input[type=checkbox]:checked ~ ul{
 @media screen and (max-width:780px) {
   .menu-mobile{
     display: block;
-    color:#ddab54;
-    background:#fff;
-    font-size: 30px;
+    color:#fff;
+    background:#259;
     font-family: GI Bolder;
+    font-size: 30px;
     text-align: center;
     padding:12px 0px;
   }
@@ -488,5 +502,5 @@ nav input[type=checkbox]:checked ~ ul{
     text-align: center;
   }
   nav ul li a ,nav ul li:hover a {
-    padding: 10px 0px;
+    padding: 10px 30px;
   }
