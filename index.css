@@ -216,15 +216,12 @@ nav input[type=checkbox]:checked ~ ul{
   }
   #parcours p{
     color:#259;
-    font-size: 40px;font-family: "GI bolder";
+    font-size: 40px;
+    font-family: "GI bolder";
     text-align: center;
     letter-spacing: 4px;
   }
-  .cv img{
-    height: 160px;
-    padding:15px;
-    right: -15%;
-  }
+
   #boutoncv {
     background-color: white;
     text-align: center;
@@ -337,16 +334,24 @@ nav input[type=checkbox]:checked ~ ul{
 
   }
 #portfolio { background-color: #fff;
-
+}
+#portfolio h2{
+  padding-bottom: 30px
+}
+#portfolio h3{
+  font-size:20px;
+  font-family: "GI bolder";
+  text-align: center;
+  letter-spacing: 2px;
 }
   #portfolio img{
     height: 250px;
     position: relative;
     justify-content:space-around;
-    padding-right:30px;
-    padding-top: 30px;
     color:white;
-    border-radius: solid,2px,#249;
+    border-style:ridge;
+    border-width: 15px;
+    border-color: sienna;
   }
   .loisirs {background-color: #259;}
 
