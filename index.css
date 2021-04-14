@@ -346,9 +346,10 @@ nav input[type=checkbox]:checked ~ ul{
     padding-right:30px;
     padding-top: 30px;
     color:white;
+    border-radius: solid,2px,#249;
   }
   .loisirs {background-color: #259;}
-  
+
  .haut{
 
    justify-content: flex-end;
@@ -364,21 +365,9 @@ nav input[type=checkbox]:checked ~ ul{
  right: -100px;
  z-index: 9999;
  }
-  footer{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background: #fff;
-  }
-  footer article {
-    font-size: 20px;
-    font-family: "Glacial indifference";
-    color: black;
-    padding-left: 1.5EM;
-    padding-right: 1.5em;
-    box-sizing: border-box;
-  }
+#contact{
+  background:white;
+}
   .contener{
     position:relative;
     display: flex;
@@ -487,7 +476,12 @@ nav input[type=checkbox]:checked ~ ul{
    left: 0px;}
  }
 
-
+footer{
+  background: white;
+font-size: 20px;
+font-family: GlacialIndifference;
+color: #259;
+}
 @media screen and (max-width:320px){
   nav{position: relative;
   }
