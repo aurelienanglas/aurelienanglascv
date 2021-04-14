@@ -274,8 +274,9 @@ nav input[type=checkbox]:checked ~ ul{
     transform-style:flat;
     perspective: 500px
   }
-  .slideshow .slide{
+ .slide{
     position: relative;
+    justify-content: center;
     top:0;
     left:0;
     right: 0;
@@ -348,7 +349,6 @@ nav input[type=checkbox]:checked ~ ul{
     height: 250px;
     position: relative;
     justify-content:space-around;
-    color:white;
     border-style:ridge;
     border-width: 15px;
     border-color: sienna;
@@ -522,3 +522,8 @@ color: #259;
   nav ul li a ,nav ul li:hover a {
     padding: 10px 30px;
   }
+@media screen and (max-width:780px){
+  #portfolio img{
+    height:170px;
+     }
+}
