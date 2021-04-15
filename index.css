@@ -9,7 +9,7 @@
 
 }
 *{  margin: 0;
-  padding: 0;
+
   box-sizing:border-box;
   font-family: "glacial indifference";
   scroll-behavior: smooth;
@@ -58,8 +58,6 @@ nav{
   padding-bottom:20px;
   width: 100%;
 
-
-
 }
 nav> ul{
   margin: 0px;
@@ -67,6 +65,10 @@ nav> ul{
 }
 nav li{
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
 }
 
 nav>ul>li{
@@ -77,26 +79,32 @@ nav >ul ::after{
   content: "";
   display: table;
   clear: both;
+
 }
 .submenu{
   display: none;
 }
 nav input[type=checkbox]{
   display: none;
+
 }
 nav label{
   display: none;
+
 }
 nav a{
   display: inline-block;
   text-decoration: none;
+
 }
 nav>ul>li>a {
   padding: 10px 15px;
   color:#249;
+
 }
 nav input[type=checkbox]:checked ~ ul{
   display: block;
+
 }
   .timeline{
     background-color:#fff;
@@ -384,6 +392,11 @@ nav input[type=checkbox]:checked ~ ul{
     align-items: center;
     flex-wrap: wrap;
     margin: 20px 0;
+  }
+  .contener .box .box-lien{
+    display: block;
+    height: 100%;
+
   }
   .contener .box{
     position: relative;
