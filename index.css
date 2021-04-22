@@ -54,13 +54,13 @@ body{
 }
 nav{
   background: #d4dce5;
-  padding-top:20px;
-  padding-bottom:20px;
-  width: 100%;
+width: 100%;
 
 }
 nav> ul{
   margin: 0px;
+  padding: 0px;
+  display:inline-block;
 
 }
 nav li{
@@ -272,9 +272,7 @@ nav input[type=checkbox]:checked ~ ul{
         #boutoncv a:hover {
         background-color: #ddab54;
         }
-        #boutoncv a:hover span {
-        padding-right: 25px;
-        }
+
       #boutoncv a:hover span:after {
         opacity: 1;
         right: 0;
@@ -361,7 +359,7 @@ nav input[type=checkbox]:checked ~ ul{
     height: 250px;
     position: relative;
     justify-content:space-around;
-    border-style:ridge;
+    border-style:groove;
     border-width: 15px;
     border-color: sienna;
   }
@@ -499,6 +497,8 @@ nav input[type=checkbox]:checked ~ ul{
  }
 
 footer{
+  text-align: center;
+  text-decoration: overline;
   background: white;
 font-size: 20px;
 font-family: GlacialIndifference;
