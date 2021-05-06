@@ -277,58 +277,19 @@ nav input[type=checkbox]:checked ~ ul{
         opacity: 1;
         right: 0;
         }
-  .slideshow{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    transform-style:flat;
-    perspective: 500px
-  }
- .slide{
-    position: relative;
-    justify-content: center;
-    top:0;
-    left:0;
-    right: 0;
-    bottom:0;
-    animation: animate 13.5s linear infinite;
-    transform: rotateY(90deg);
-  }
-  .slideshow .slide:nth-child(2){
-    animation-delay: 0s;}
-  .slideshow .slide:nth-child(3){
-    animation-delay: 01.5s;}
-  .slideshow .slide:nth-child(8){
-    animation-delay: 3s;}
-  .slideshow .slide:nth-child(1){
-    animation-delay: 4.5s;}
-  .slideshow .slide:nth-child(4){
-    animation-delay: 6s;}
-  .slideshow .slide:nth-child(5){
-    animation-delay: 7.5s;}
-  .slideshow .slide:nth-child(6){
-    animation-delay: 9s;}
-  .slideshow .slide:nth-child(9){
-    animation-delay: 10.5s;}
-  .slideshow .slide:nth-child(7){
-    animation-delay: 12s;}
+        .owl-carrousel{
+            position:relative;
+            height:400px;
+            width:400px;
+            margin:auto;
+        }
+        .owl-carrousel img{
+            position:absolute;
+            top:0;
+            left:0;
+        }
 
-  .slideshow .slide img{
-    position: absolute;
-    top: 0;
-    left:0;
-    object-fit:fill;
-    transform: rotateY(180deg);
-    animation-duration: infinite;
-  }
-  @keyframes animate {
-  0%{
-    transform: rotateY(90deg);
-  }
-  10%,100%{
-    transform: rotateY(270deg);
-  }
-  }
+
   #competences{background-color: #fff;}
   #competences img{
     height: 100px;

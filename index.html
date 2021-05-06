@@ -5,21 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-  <script>
+<!-- <script src="jquery.min.js"></script> -->
+<!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<script type="text/javascript">
+let ladate=new Date()
+document.getElementsByClassName("copyright")
+document.write("&copy;");
+document.write("" +ladate.getFullYear());
+document.write("Aurelien Anglas");
+console.log();
 
-              jQuery(function(){
-                  $(function () {
-                      $(window).scroll(function () {
-                          if ($(this).scrollTop() > 200 ) {
-                              $('#scrollUp').css('right','10px');
-                          } else {
-                              $('#scrollUp').removeAttr( 'style' );
-                          }
+  $(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 200 ) {
+              $('#scrollUp').css('right','10px');
+          } else {
+              $('#scrollUp').removeAttr( 'style' );
+          }
+      });
+  });
 
-                      });
-                  });
-              });
   </script>
 <title>Aurélien Anglas CV</title>
 </head>
@@ -56,7 +64,7 @@
 
     <article class="profil">
       <h2>PROFIL</h2>
-      Je suis un jeune homme de 34 ans qui souhaite accroitre ses connaissances dans le monde du développement web que ce soit par les recherches personnelles mais aussi par les taches seules ou en groupe que l'on doit faire pour l'entreprise
+      Je suis un jeune homme né en 1986 qui souhaite accroitre ses connaissances dans l'univers de la médiation numérique que ce soit par les recherches personnelles mais aussi par les taches seules ou en groupe que l'on doit faire pour l'entreprise
     </article>
 
   </section>
@@ -72,16 +80,15 @@
           <p>2010</p>
           <h3>Mairie de Saint-Souplet</h3>
           <article class="">
-            Stage où j'ai effectué la numérisation du cadastre ciméteriale.
+            Stage où j ai effectué la numérisation du cadastre ciméteriale.
           </article>
-
         </div>
       </div>
       <div class="container right">
         <div class="content">  <p>2012</p>
             <h3>Cyber-Base de Crespin</h3>
             <article class="">
-              Stage d'animateur où j'ai géré le parc informatique, j'ai aidé les usagés dans leurs recherches informatique et j'ai préparé et donné un cours sur le montage photo pour différents publics.
+              Stage d animateur où j ai géré le parc informatique, j ai aidé les usagés dans leurs recherches informatique et j ai préparé et donné un cours sur le montage photo pour différents publics.
             </article>
 
         </div>
@@ -130,35 +137,19 @@
     <article class="Competences">
         <h2>COMPETENCES</h2>
       <br>
-      <div class="slideshow">
-        <div class="slide">
-          <img src="img/github.svg" alt="" >
+      <div class="owl-carousel">
+
+          <div><img src="img/html.svg" alt=""></div>
+          <div><img src="img/css.svg" alt=""></div>
+          <div><img src="img/js.svg" alt=""></div>
+          <div><img src="img/github.svg" alt="" ></div>
+          <div><img src="img/photoshop.svg" alt=""></div>
+          <div><img src="img/illustrator.svg" alt=""></div>
+          <div><img src="img/indesign.svg" alt=""></div>
+          <div><img src="img/office.svg" alt=""></div>
+          <div><img src="img/audacity.svg" alt=""></div>
+
         </div>
-        <div class="slide">
-          <img src="img/html.svg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/css.svg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/office.svg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/photoshop.svg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/illustrator.svg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/audacity.svg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/js.svg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/indesign.svg" alt="">
-        </div>
-      </div>
 
     </article>
 
@@ -251,14 +242,23 @@
 <footer>
 
 <section>
-  <article class="">
+  <article class="copyright">
     <div class="">
-      <h5>&copy;2021 Aurélien ANGLAS</h5>
+
     </div>
   </article>
 
 </section>
 
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+</script>
+
 </body>
 </html>
